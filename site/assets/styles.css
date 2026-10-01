@@ -30,7 +30,7 @@ p { margin-bottom: 12px; }
 .language-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .layout { display: grid; grid-template-columns: 222px minmax(0, 1fr); gap: 46px; padding-top: 38px; }
 .profile { align-self: start; }
-.portrait { display: block; width: 128px; height: 128px; border-radius: 50%; object-fit: cover; margin-bottom: 22px; }
+.portrait { display: block; width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 22px; }
 .english-name { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
 .affiliation { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
 .profile-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; font-size: 13px; }
@@ -55,8 +55,8 @@ p { margin-bottom: 12px; }
   .header { gap: 12px; }
   .navigation { gap: 8px 17px; }
   .layout { grid-template-columns: 1fr; gap: 30px; padding-top: 28px; }
-  .profile { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px 20px; }
-  .portrait { width: 84px; height: 84px; margin-bottom: 0; }
+  .profile { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px 20px; }
+  .portrait { width: 112px; height: 112px; margin-bottom: 0; }
   .profile-heading { align-self: center; }
   h1 { font-size: 28px; }
   .english-name { margin-bottom: 0; }
