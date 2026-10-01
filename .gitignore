@@ -1,0 +1,8 @@
+# 本地准备材料和核验记录不进入公开仓库。
+/docs/
+/assets/
+/reports/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

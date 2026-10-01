@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light;
+  --text: #263347;
+  --muted: #5c6879;
+  --link: #245ca7;
+  --line: #e1e7ee;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 16px; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, select:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+p, h1, h2, h3 { margin-top: 0; }
+h1, h2, h3 { font-weight: 600; line-height: 1.35; }
+h1 { margin-bottom: 5px; font-size: 31px; letter-spacing: -.025em; }
+h2 { margin-bottom: 15px; font-size: 24px; }
+h3 { margin-bottom: 7px; font-size: 18px; }
+p { margin-bottom: 12px; }
+.page { max-width: 1140px; margin: 0 auto; padding: 32px 36px; }
+.header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--line); padding-bottom: 22px; }
+.brand { color: var(--text); font-size: 18px; font-weight: 600; }
+.navigation { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; font-size: 14px; }
+.navigation a { display: inline-flex; align-items: center; min-height: 36px; }
+.language-select { background: #fff; color: var(--text); font: inherit; padding: 5px 8px; min-height: 36px; border: 1px solid var(--line); border-radius: 4px; }
+.language-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.layout { display: grid; grid-template-columns: 222px minmax(0, 1fr); gap: 46px; padding-top: 38px; }
+.profile { align-self: start; }
+.portrait { display: block; width: 128px; height: 128px; border-radius: 50%; object-fit: cover; margin-bottom: 22px; }
+.english-name { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+.affiliation { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+.profile-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; font-size: 13px; }
+.profile-links a { overflow-wrap: anywhere; }
+.section { padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+.eyebrow { color: var(--muted); font-size: 11px; letter-spacing: .11em; margin-bottom: 8px; }
+.intro, .description { color: var(--muted); font-size: 15px; }
+.interests { display: flex; flex-wrap: wrap; gap: 10px 28px; list-style: none; padding: 0; margin: 0; font-size: 15px; }
+.meta { color: var(--muted); font-size: 13px; }
+.contributions { padding-left: 20px; margin: 15px 0; font-size: 14px; }
+.contributions li + li { margin-top: 5px; }
+.technologies { color: var(--muted); font-size: 13px; margin: 16px 0 12px; }
+.project-link { display: inline-block; min-height: 40px; padding: 6px 0; font-size: 14px; }
+.access-note { font-size: 13px; }
+.education-entry + .education-entry { margin-top: 23px; }
+.education-entry p { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+.footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; padding-bottom: 8px; }
+.skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-160%); background: #fff; padding: 8px 12px; z-index: 1; }
+.skip-link:focus { transform: none; }
+@media (max-width: 760px) {
+  .page { padding: 24px; }
+  .header { gap: 12px; }
+  .navigation { gap: 8px 17px; }
+  .layout { grid-template-columns: 1fr; gap: 30px; padding-top: 28px; }
+  .profile { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px 20px; }
+  .portrait { width: 84px; height: 84px; margin-bottom: 0; }
+  .profile-heading { align-self: center; }
+  h1 { font-size: 28px; }
+  .english-name { margin-bottom: 0; }
+  .affiliation, .profile-links { grid-column: 1 / -1; margin-bottom: 0; }
+  .profile-links { flex-direction: row; flex-wrap: wrap; gap: 8px 20px; }
+  .section { padding-bottom: 25px; margin-bottom: 25px; }
+}
+@media (max-width: 360px) {
+  .page { padding: 20px; }
+  .navigation { gap: 7px 14px; }
+}
+@media (pointer: coarse) {
+  .navigation a, .language-select, .profile-links a, .project-link { min-height: 44px; }
+  .profile-links a { display: inline-flex; align-items: center; }
+}
